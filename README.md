@@ -1,1 +1,11 @@
-# entityresolution
+entity resolution, stated simply, is the act of connecting information within datasets or between more than one dataset using machine learning. machine learning, as it relates to entity resolution, learns by building pattern recognition. this helps it to be more susceptible to similar, but not exact entries. without machine learning, it would be common to match up pairs by hand, or accept fuzzy / messy matches that may not even be true matches. 
+
+when we handled missing data, entity resolution can play its part by leveraging the other information we had to fill in the missing dates. whether it can pull from prior entries or the following one, it is working by using what it already has to learn how to continue to fill in where it is missing in the future. another step along the way was the explode (pandas) function which helped to handle entries with more than one name per entry (one-to-many) relationships. this ensures that making comparisons is simpler. 
+
+when creating the best possible sleep classifier from acceleration / heart rate, it is easy to relate this task to entity resolution. these both required transforming noisy raw data into meaningful features / insights. in this instance, the sleep classifier helped to reshape acceleration into something that could classify sleep quality. 
+
+when we applied xgboost to our classifiers, mine personally did better than without. xgboost ties into entity resolution because it trains itself through adaptating to previous inputs. 
+
+training data that was created in week 5 for this is instrumental in defining entity resolution as it all ties into using machine learning to create matches. there are many different things that could have been slightly different per "almost match" in this specific instance. the training data gives an example of just one way these error types can look. 
+
+finally, this past week we used SQLite to create a database to hold our articles and grants data. the database itself was helpful to store raw data where it can be standardized and manipulated. having everything in the same place helps to let us identify and merge duplicate records. 
